@@ -69,12 +69,10 @@ justify-content: space-between;
 /* header */
 .header {
 display: flex;
-/* width: 1607px; */
 border-bottom: 1px solid #ECECEC;
 margin-left: auto;
 margin-right: auto;
 justify-content: space-between;
-/* gap: 50px; */
 }
 
 .header-nav {
@@ -82,7 +80,6 @@ flex-grow: 1;
 display: flex;
 align-items: center;
 }
-
 
 .header-container {
 display: flex;
@@ -93,7 +90,6 @@ align-items: center;
 display: flex;
 justify-content: space-between;
 gap: 50px;
-/* padding-left: 93px; */
 margin-left: 93px;
 }
 
@@ -102,10 +98,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 gap: 30px;
-/* padding-left: 344px; */
 margin-left: auto;
-flex-shrink: 0;
-
+/* flex-shrink: 0; */
 }
 
 ul {
@@ -146,13 +140,14 @@ padding: 25px 0;
 }
 
 .link-header:hover,
-.link-header:focus,
-.link-header:active {
+.link-header:focus{
 color: var(--color-link);
 }
 
 .link-header2 {
-display: block;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
 color: #757575;
 background-color: #FFFFFF;
 font-size: 14px;
@@ -161,48 +156,15 @@ font-style: normal;
 letter-spacing: 0.02em;
 padding: 25px 0px 25px 0px;
 text-decoration: none;
-}
-
-
-.link-header2:hover,
-:focus,:active {
-color: var(--color-link);
-}
-
-.header-menu2 .link{
-display: flex;
-align-items: center;
 gap: 10px;
 }
+.link-header2:hover, :focus{
+	color: var(--color-link);
+}
 
-.link-header2-img{
-display: flex;
-align-items: center;
-/* justify-content: center; */
-width: 16px;
-height: 12px;
-fill: var(--color-secondary);
-background-color: var(--social-icon-background);
-}
-.link-header2-icon{
-gap: 10px;
 
-}
-.link-header2-img-tel{
-display: flex;
-align-items: center;
-/* justify-content: center; */
-width: 16px;
-height: 12px;
-fill: var(--color-secondary);
-background-color: var(--social-icon-background);
-}
-.link-header2-icon-tel{
-gap: 10px;
-}
-.link-header2-img:hover, :focus{
-color: var(--color-link);
-}
+
+
 /* Hero */
 
 .hero {
@@ -346,26 +308,29 @@ gap: 30px;
 border: inherit;
 }
 .customers-cards:hover .regular-customers-icon{
-	fill: #2196F3;
-
+	fill: var(--color-link);
 }
-.regular-customers-img{
+
+.customers-cards:hover{
+	border: 1px solid #2196F3;
+}
+
+.customers-cards{
 display: flex;
-align-items: center;
 justify-content: center;
+align-items: center;
 width: 170px;
 height: 92px;
-fill: var(--color-background-icon);
+/* fill: var(--color-background-icon); */
 color: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
 border: 1px solid #AFB1B8;
-border-radius: 4px;
+gap: 30px;
 
 
 }
 .regular-customers-icon{
-color: #F5F4FA;
 fill: var(--color-background-icon);
 color: #AFB1B8;
 }
@@ -374,7 +339,6 @@ color: #AFB1B8;
 	fill: var(--color-link);
 } */
 .team {
-/* width: 1600px; */
 background-color: #F5F4FA;
 padding-top: 94px;
 padding-bottom: 94px;
@@ -391,12 +355,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .section-team {
-/* width: 1600px; */
 color: var(--color-primary);
-/* background-color: #F5F4FA; */
 font-size: 36px;
 line-height: 1.17;
-/* text-transform: uppercase; */
 letter-spacing: 0.03em;
 font-weight: 700;
 margin-left: auto;
@@ -411,9 +372,7 @@ background-color: var(--color-background);
 font-size: 16px;
 font-weight: 500;
 line-height: 1.13;
-/* margin-top: 30px; */
 margin-bottom: 10px;
-
 }
 
 .card-name {
@@ -432,13 +391,11 @@ padding-left: 0px;
 gap: 30px;
 }
 
-
 .team-specialty {
 color: #757575;
 background-color: var(--color-background);
 font-size: 16px;
 line-height: 1.13;
-/* margin-bottom: 30px; */
 }
 
 .socials-list-team {
@@ -447,7 +404,6 @@ align-items: center;
 gap: 10px;
 justify-content: center;
 padding-top: 16px;
-/* padding-left: 70px; */
 }
 
 .socials-link-team {
@@ -461,10 +417,16 @@ background-color: var(--social-icon-background);
 border-radius: 50%;
 }
 
-.socials-link-team:hover {
+.socials-link-team:hover, :focus {
 background-color: var(--color-link);
-/* fill: var(--color-background); */
+/* fill: var(--color-background-icon); */
 }
+.socials-icon{
+	fill: var(--color-background-icon);
+}
+.socials-link-team:hover .socials-icon,
+.socials-link-team:focus .socials-icon 
+{fill: var(--color-background);}
 
 
 .studio2 {
@@ -472,8 +434,6 @@ color: #FFFFFF;
 }
 
 .footer {
-/* width: 1600px; */
-/* height: 252px; */
 border-top: 60px;
 background-color: #2F303A;
 margin-left: auto;
@@ -533,8 +493,7 @@ line-height: 1.7;
 }
 
 .link-footer:hover,
-.link-footer:focus,
-.link-footer:active {
+.link-footer:focus,{
 color: var(--color-link);
 }
 
@@ -626,13 +585,12 @@ margin-right: auto;
 .item {
 /* width: 370px;
 height: 404px; */
-outline: 1px solid #EEEEEE;
-
 }
 
 .portfolio-card{
 
 }
+
 .card{
 display: block;
 text-decoration: none;
@@ -685,5 +643,6 @@ color: var(--color-secondary)
 
 .card-content {
 padding: 20px 24px;
-outline: 1px solid #EEEEEE;
+border: 1px solid #EEEEEE;
+border-top: 0px;
 }
