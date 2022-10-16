@@ -4,6 +4,8 @@
 	--color-background: #FFFFFF;
 	--color-link: #2196F3;
 	--color-background-icon: #AFB1B8;
+	--social-icon-background: rgba(255, 255, 255, 0.1);
+	--section-background: #2F303A;
 }
 
 .visually-hidden {
@@ -287,26 +289,33 @@ color: var(--color-primary);
 	margin-bottom: 50px;
 	text-align: center;
 }
+.customers-cards .regular-customers-icon:hover, :focus{
+/* background-color:#F5F5F5; */
+background-color: #2196F3;
+
+}
+
 .regular-customers-card{
-	display: flex;
-		justify-content: space-between;
-		padding-left: auto;
-		padding-right: auto;
-		gap: 30px;
+display: flex;
+justify-content: space-between;
+padding-left: auto;
+padding-right: auto;
+gap: 30px;
+border: inherit;
 }
 .regular-customers-img{
-	display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 170px;
-		height: 92px;
-		fill: var(--color-background-icon);
-		background: #F5F4FA;
-		border-radius: 4px;
-		margin-bottom: 30px;
-		border: 1px solid #AFB1B8;
-			border-radius: 4px;
-		
+display: flex;
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 92px;
+fill: var(--color-background-icon);
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+border: 1px solid #AFB1B8;
+	border-radius: 4px;
+
 
 }
 .regular-customers-icon{
@@ -396,9 +405,12 @@ margin-left: auto;
 margin-right: auto;
 padding-top: 60px;
 padding-bottom: 60px;
-
 }
 
+.footer .container {
+	display: flex;
+	align-items: baseline;
+}
 .web-title-footer {
 	display: flex;
 	font-size: 26px;
@@ -450,6 +462,40 @@ padding-bottom: 60px;
 .link-footer:active {
 	color: var(--color-link);
 }
+
+/* Socials */
+.section-social-list{
+color: var(--color-background);
+background-color: var(--section-background);
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+margin-bottom: 20px;
+padding-left: 70px;
+}
+
+.socials-list{
+display: flex;
+align-items: center;
+gap: 10px;
+padding-left: 70px;
+}
+
+.socials-link{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 32px;
+height: 32px;
+fill: var(--color-background);
+background-color: var(--social-icon-background);
+border-radius:50%;
+}
+.socials-link:hover{
+	background-color: var(--color-link);
+/* fill: var(--color-background); */
+}
+
 
 .button-portfolio {
 	color: var(--color-primary);
