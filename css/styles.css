@@ -100,7 +100,7 @@ section {
 .header-menu2 {
 	display: flex;
 	justify-content: space-between;
-	gap: 50px;
+	gap: 30px;
 	/* padding-left: 344px; */
 	margin-left: auto;
 	
@@ -163,11 +163,44 @@ ul {
 
 
 .link-header2:hover,
-.link-header2:focus,
-.link-header2:active {
+:focus,:active {
 	color: var(--color-link);
 }
 
+.header-menu2 .link{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.link-header2-img{
+display: flex;
+align-items: center;
+/* justify-content: center; */
+width: 16px;
+height: 12px;
+fill: var(--color-secondary);
+background-color: var(--social-icon-background);
+}
+.link-header2-icon{
+gap: 10px;
+
+}
+.link-header2-img-tel{
+display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	width: 16px;
+	height: 12px;
+	fill: var(--color-secondary);
+	background-color: var(--social-icon-background);
+}
+.link-header2-icon-tel{
+gap: 10px;
+}
+.link-header2-img:hover, :focus{
+	color: var(--color-link);
+}
 /* Hero */
 
 .hero {
@@ -390,6 +423,29 @@ border: 1px solid #AFB1B8;
 	/* margin-bottom: 30px; */
 }
 
+.socials-list-team {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	/* padding-left: 70px; */
+}
+
+.socials-link-team {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	width: 44px;
+	height: 44px;
+	fill: var(--color-background-icon);
+	background-color: var(--social-icon-background);
+	border-radius: 50%;
+}
+
+.socials-link-team:hover {
+	background-color: var(--color-link);
+	/* fill: var(--color-background); */
+}
 
 
 .studio2 {
@@ -484,10 +540,10 @@ padding-left: 70px;
 .socials-link{
 display: flex;
 align-items: center;
-justify-content: center;
-width: 32px;
-height: 32px;
-fill: var(--color-background);
+/* justify-content: center; */
+width: 44px;
+height: 44px;
+/* fill: var(--color-background); */
 background-color: var(--social-icon-background);
 border-radius:50%;
 }
@@ -552,6 +608,7 @@ border-radius:50%;
 	/* width: 370px;
 	height: 404px; */
 	outline: 1px solid #EEEEEE;
+	
 }
 
 .card{
@@ -565,6 +622,7 @@ border-radius:50%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	
 
 	/* margin-top: - 30px;
 	margin-left: - 30px; */
