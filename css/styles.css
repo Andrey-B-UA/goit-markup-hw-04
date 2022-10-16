@@ -329,8 +329,7 @@ margin-bottom: 50px;
 text-align: center;
 }
 .customers-cards .regular-customers-icon:hover, :focus{
-/* background-color:#F5F5F5; */
-background-color: #2196F3;
+background-color: var(--color-background);
 
 }
 
@@ -342,6 +341,10 @@ padding-right: auto;
 gap: 30px;
 border: inherit;
 }
+.customers-cards:hover .regular-customers-icon{
+	fill: #2196F3;
+
+}
 .regular-customers-img{
 display: flex;
 align-items: center;
@@ -349,7 +352,7 @@ justify-content: center;
 width: 170px;
 height: 92px;
 fill: var(--color-background-icon);
-background: #F5F4FA;
+color: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
 border: 1px solid #AFB1B8;
@@ -359,8 +362,13 @@ border-radius: 4px;
 }
 .regular-customers-icon{
 color: #F5F4FA;
-/* color: #AFB1B8; */
+fill: var(--color-background-icon);
+color: #AFB1B8;
 }
+/* .regular-customers-icon:hover, :focus {
+	
+	fill: var(--color-link);
+} */
 .team {
 /* width: 1600px; */
 background-color: #F5F4FA;
@@ -434,6 +442,7 @@ display: flex;
 align-items: center;
 gap: 10px;
 justify-content: center;
+padding-top: 16px;
 /* padding-left: 70px; */
 }
 
@@ -546,16 +555,16 @@ padding-left: 70px;
 .socials-link{
 display: flex;
 align-items: center;
-/* justify-content: center; */
+justify-content: center;
 width: 44px;
 height: 44px;
-/* fill: var(--color-background); */
+fill: var(--color-background);
 background-color: var(--social-icon-background);
 border-radius:50%;
 }
-.socials-link:hover{
+.socials-link:hover, :focus{
 background-color: var(--color-link);
-/* fill: var(--color-background); */
+fill: var(--color-background);
 }
 
 
