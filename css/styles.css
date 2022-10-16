@@ -100,9 +100,11 @@ margin-left: 93px;
 .header-menu2 {
 display: flex;
 justify-content: space-between;
+align-items: center;
 gap: 30px;
 /* padding-left: 344px; */
 margin-left: auto;
+flex-shrink: 0;
 
 }
 
