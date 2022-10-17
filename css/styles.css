@@ -296,8 +296,9 @@ margin-bottom: 50px;
 text-align: center;
 }
 
-.customers-cards .regular-customers-icon:hover,
-.customers-cards .regular-customers-icon:focus{
+.regular-customers-icon:hover,
+.regular-customers-icon:focus{
+	fill:var(--color-link);
 background-color: var(--color-background);
 }
 
@@ -316,7 +317,9 @@ justify-content: center;
 align-items: center;
 width: 170px;
 height: 92px;
-color: #F5F4FA;
+fill: #F5F4FA;
+/* color: #F5F4FA; */
+background-color:var(--color-background);
 border-radius: 4px;
 margin-bottom: 30px;
 border: 1px solid #AFB1B8;
@@ -586,13 +589,11 @@ margin-right: auto;
 }
 
 
-
 /* CARD-SET */
 .item {
 /* width: 370px;
 height: 404px; */
 }
-
 
 .portfolio-card{
 
