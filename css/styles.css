@@ -334,14 +334,12 @@ gap: 30px;
 
 .regular-customers-icon{
 fill: var(--color-background-icon);
-color: #AFB1B8;
 }
 
-/* .regular-customers-icon:hover, 
-.regular-customers-icon:focus,
-.regular-customers-icon:active{
-fill: var(--color-link);
-} */
+.customers-cards:hover .regular-customers-icon,
+.customers-cards:focus .regular-customers-icon{
+	fill: #2196F3;
+}
 
 .team {
 background-color: #F5F4FA;
