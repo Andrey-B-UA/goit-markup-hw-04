@@ -162,7 +162,12 @@ gap: 10px;
 	color: var(--color-link);
 }
 
-
+.link-header2:hover .link-header2-icon{
+	fill: var(--color-link);
+}
+.link-header2:hover .link-header2-icon-tel {
+	fill: var(--color-link);
+}
 
 
 /* Hero */
@@ -525,11 +530,15 @@ fill: var(--color-background);
 background-color: var(--social-icon-background);
 border-radius:50%;
 }
-.socials-link:hover, :focus{
+.socials-link:hover, :focus {
 background-color: var(--color-link);
 fill: var(--color-background);
 }
 
+.socials-link:hover
+.link-footer-socials{
+		background-color: #fff;
+}
 
 .button-portfolio {
 color: var(--color-primary);
